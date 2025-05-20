@@ -1,0 +1,262 @@
+2024-11-13T00:54:47+00:00 CRITICAL Possible integer overflow in memory allocation (2 * 0 + 32) in C:\xampp\htdocs\Nhom5_CMS\wp-includes\shortcodes.php on line 265
+
+2024-11-13T00:54:50+00:00 CRITICAL Possible integer overflow in memory allocation (2 * 80 + 32) in C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-embed.php on line 446
+
+2024-11-13T00:54:51+00:00 CRITICAL Possible integer overflow in memory allocation (2 * 0 + 32) in C:\xampp\htdocs\Nhom5_CMS\wp-includes\shortcodes.php on line 265
+
+2024-11-13T03:13:05+00:00 CRITICAL Uncaught Error: Class "WpOrg\Requests\Requests" not found in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php:57
+Stack trace:
+#0 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_CURL.php(32): SWP_Requests::fetch_shares_via_wordpress_multi(Array)
+#1 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(631): SWP_CURL::fetch_shares_via_curl_multi(Array)
+#2 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(513): SWP_Post_Cache->fetch_api_responses()
+#3 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(307): SWP_Post_Cache->rebuild_share_counts()
+#4 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(132): SWP_Post_Cache->rebuild_cached_data()
+#5 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache_Loader.php(67): SWP_Post_Cache->__construct(290)
+#6 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(390): SWP_Post_Cache_Loader->get_post_cache(290)
+#7 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(270): SWP_Buttons_Panel->establish_share_data()
+#8 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel_Loader.php(178): SWP_Buttons_Panel->__construct(Array)
+#9 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(308): SWP_Buttons_Panel_Loader->social_warfare_wrapper('<p>\xC4\x90ang c\xE1\xBA\xADp ...')
+#10 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(205): WP_Hook->apply_filters('<p>\xC4\x90ang c\xE1\xBA\xADp ...', Array)
+#11 C:\xampp\htdocs\Nhom5_CMS\wp-includes\post-template.php(255): apply_filters('the_content', '\xC4\x90ang c\xE1\xBA\xADp nh\xE1...')
+#12 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\templates\single-product\tabs\description.php(30): the_content()
+#13 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1832): wc_get_template('single-product/...')
+#15 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product\tabs\tabs.php(70): woocommerce_product_description_tab('description', Array)
+#16 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1612): wc_get_template('single-product/...')
+#18 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(308): woocommerce_output_product_data_tabs('')
+#19 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#20 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#21 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product\layouts\product-right-sidebar-full.php(72): do_action('woocommerce_aft...')
+#22 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#24 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\content-single-product.php(42): wc_get_template_part('single-product/...', 'right-sidebar-f...')
+#25 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#26 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#27 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product.php(39): wc_get_template_part('content', 'single-product')
+#28 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#29 C:\xampp\htdocs\Nhom5_CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#30 C:\xampp\htdocs\Nhom5_CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#31 {main}
+  thrown in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php on line 57
+
+2024-11-13T03:14:35+00:00 CRITICAL Uncaught Error: Class "WpOrg\Requests\Requests" not found in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php:57
+Stack trace:
+#0 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_CURL.php(32): SWP_Requests::fetch_shares_via_wordpress_multi(Array)
+#1 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(631): SWP_CURL::fetch_shares_via_curl_multi(Array)
+#2 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(513): SWP_Post_Cache->fetch_api_responses()
+#3 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(307): SWP_Post_Cache->rebuild_share_counts()
+#4 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(132): SWP_Post_Cache->rebuild_cached_data()
+#5 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache_Loader.php(67): SWP_Post_Cache->__construct(290)
+#6 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(390): SWP_Post_Cache_Loader->get_post_cache(290)
+#7 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(270): SWP_Buttons_Panel->establish_share_data()
+#8 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel_Loader.php(178): SWP_Buttons_Panel->__construct(Array)
+#9 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(308): SWP_Buttons_Panel_Loader->social_warfare_wrapper('<p>\xC4\x90ang c\xE1\xBA\xADp ...')
+#10 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(205): WP_Hook->apply_filters('<p>\xC4\x90ang c\xE1\xBA\xADp ...', Array)
+#11 C:\xampp\htdocs\Nhom5_CMS\wp-includes\post-template.php(255): apply_filters('the_content', '\xC4\x90ang c\xE1\xBA\xADp nh\xE1...')
+#12 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\templates\single-product\tabs\description.php(30): the_content()
+#13 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1832): wc_get_template('single-product/...')
+#15 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product\tabs\tabs.php(70): woocommerce_product_description_tab('description', Array)
+#16 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1612): wc_get_template('single-product/...')
+#18 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(308): woocommerce_output_product_data_tabs('')
+#19 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#20 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#21 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product\layouts\product-right-sidebar-full.php(72): do_action('woocommerce_aft...')
+#22 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#24 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\content-single-product.php(42): wc_get_template_part('single-product/...', 'right-sidebar-f...')
+#25 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#26 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#27 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product.php(39): wc_get_template_part('content', 'single-product')
+#28 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#29 C:\xampp\htdocs\Nhom5_CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#30 C:\xampp\htdocs\Nhom5_CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#31 {main}
+  thrown in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php on line 57
+
+2024-11-13T03:14:57+00:00 CRITICAL Uncaught Error: Class "WpOrg\Requests\Requests" not found in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php:57
+Stack trace:
+#0 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_CURL.php(32): SWP_Requests::fetch_shares_via_wordpress_multi(Array)
+#1 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(631): SWP_CURL::fetch_shares_via_curl_multi(Array)
+#2 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(513): SWP_Post_Cache->fetch_api_responses()
+#3 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(307): SWP_Post_Cache->rebuild_share_counts()
+#4 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(132): SWP_Post_Cache->rebuild_cached_data()
+#5 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache_Loader.php(67): SWP_Post_Cache->__construct(290)
+#6 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(390): SWP_Post_Cache_Loader->get_post_cache(290)
+#7 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(270): SWP_Buttons_Panel->establish_share_data()
+#8 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel_Loader.php(178): SWP_Buttons_Panel->__construct(Array)
+#9 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(308): SWP_Buttons_Panel_Loader->social_warfare_wrapper('<p>\xC4\x90ang c\xE1\xBA\xADp ...')
+#10 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(205): WP_Hook->apply_filters('<p>\xC4\x90ang c\xE1\xBA\xADp ...', Array)
+#11 C:\xampp\htdocs\Nhom5_CMS\wp-includes\post-template.php(255): apply_filters('the_content', '\xC4\x90ang c\xE1\xBA\xADp nh\xE1...')
+#12 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\templates\single-product\tabs\description.php(30): the_content()
+#13 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1832): wc_get_template('single-product/...')
+#15 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product\tabs\tabs.php(70): woocommerce_product_description_tab('description', Array)
+#16 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1612): wc_get_template('single-product/...')
+#18 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(308): woocommerce_output_product_data_tabs('')
+#19 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#20 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#21 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product\layouts\product-right-sidebar-full.php(72): do_action('woocommerce_aft...')
+#22 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#24 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\content-single-product.php(42): wc_get_template_part('single-product/...', 'right-sidebar-f...')
+#25 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#26 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#27 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product.php(39): wc_get_template_part('content', 'single-product')
+#28 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#29 C:\xampp\htdocs\Nhom5_CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#30 C:\xampp\htdocs\Nhom5_CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#31 {main}
+  thrown in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php on line 57
+
+2024-11-13T03:15:07+00:00 CRITICAL Uncaught Error: Class "WpOrg\Requests\Requests" not found in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php:57
+Stack trace:
+#0 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_CURL.php(32): SWP_Requests::fetch_shares_via_wordpress_multi(Array)
+#1 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(631): SWP_CURL::fetch_shares_via_curl_multi(Array)
+#2 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(513): SWP_Post_Cache->fetch_api_responses()
+#3 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(307): SWP_Post_Cache->rebuild_share_counts()
+#4 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(132): SWP_Post_Cache->rebuild_cached_data()
+#5 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache_Loader.php(67): SWP_Post_Cache->__construct(292)
+#6 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(390): SWP_Post_Cache_Loader->get_post_cache(292)
+#7 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(270): SWP_Buttons_Panel->establish_share_data()
+#8 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel_Side.php(33): SWP_Buttons_Panel->__construct()
+#9 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel_Loader.php(198): SWP_Buttons_Panel_Side->__construct(Array)
+#10 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(308): SWP_Buttons_Panel_Loader->floating_buttons('')
+#11 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#12 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\Nhom5_CMS\wp-includes\general-template.php(3059): do_action('wp_footer')
+#14 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\footer.php(22): wp_footer()
+#15 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(783): require_once('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(718): load_template('C:\\xampp\\htdocs...', true, Array)
+#17 C:\xampp\htdocs\Nhom5_CMS\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#18 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product.php(58): get_footer('shop')
+#19 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#20 C:\xampp\htdocs\Nhom5_CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\Nhom5_CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#22 {main}
+  thrown in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php on line 57
+
+2024-11-13T03:15:51+00:00 CRITICAL Uncaught Error: Class "WpOrg\Requests\Requests" not found in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php:57
+Stack trace:
+#0 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_CURL.php(32): SWP_Requests::fetch_shares_via_wordpress_multi(Array)
+#1 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(631): SWP_CURL::fetch_shares_via_curl_multi(Array)
+#2 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(513): SWP_Post_Cache->fetch_api_responses()
+#3 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(307): SWP_Post_Cache->rebuild_share_counts()
+#4 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(132): SWP_Post_Cache->rebuild_cached_data()
+#5 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache_Loader.php(67): SWP_Post_Cache->__construct(290)
+#6 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(390): SWP_Post_Cache_Loader->get_post_cache(290)
+#7 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(270): SWP_Buttons_Panel->establish_share_data()
+#8 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel_Loader.php(178): SWP_Buttons_Panel->__construct(Array)
+#9 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(308): SWP_Buttons_Panel_Loader->social_warfare_wrapper('<p>\xC4\x90ang c\xE1\xBA\xADp ...')
+#10 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(205): WP_Hook->apply_filters('<p>\xC4\x90ang c\xE1\xBA\xADp ...', Array)
+#11 C:\xampp\htdocs\Nhom5_CMS\wp-includes\post-template.php(255): apply_filters('the_content', '\xC4\x90ang c\xE1\xBA\xADp nh\xE1...')
+#12 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\templates\single-product\tabs\description.php(30): the_content()
+#13 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1832): wc_get_template('single-product/...')
+#15 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product\tabs\tabs.php(70): woocommerce_product_description_tab('description', Array)
+#16 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('C:\\xampp\\htdocs...')
+#17 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1612): wc_get_template('single-product/...')
+#18 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(308): woocommerce_output_product_data_tabs('')
+#19 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters('', Array)
+#20 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#21 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product\layouts\product-right-sidebar-full.php(72): do_action('woocommerce_aft...')
+#22 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#23 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#24 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\content-single-product.php(42): wc_get_template_part('single-product/...', 'right-sidebar-f...')
+#25 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#26 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#27 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product.php(39): wc_get_template_part('content', 'single-product')
+#28 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#29 C:\xampp\htdocs\Nhom5_CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#30 C:\xampp\htdocs\Nhom5_CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#31 {main}
+  thrown in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php on line 57
+
+2024-11-13T03:16:21+00:00 CRITICAL Uncaught Error: Class "WpOrg\Requests\Requests" not found in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php:57
+Stack trace:
+#0 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_CURL.php(32): SWP_Requests::fetch_shares_via_wordpress_multi(Array)
+#1 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(631): SWP_CURL::fetch_shares_via_curl_multi(Array)
+#2 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(513): SWP_Post_Cache->fetch_api_responses()
+#3 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(307): SWP_Post_Cache->rebuild_share_counts()
+#4 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(132): SWP_Post_Cache->rebuild_cached_data()
+#5 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache_Loader.php(101): SWP_Post_Cache->__construct(290)
+#6 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(310): SWP_Post_Cache_Loader->update_post(290)
+#7 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\Nhom5_CMS\wp-includes\post.php(4717): do_action('save_post', 290, Object(WP_Post), true)
+#10 C:\xampp\htdocs\Nhom5_CMS\wp-includes\post.php(4819): wp_insert_post(Array, false, true)
+#11 C:\xampp\htdocs\Nhom5_CMS\wp-admin\includes\post.php(426): wp_update_post(Array)
+#12 C:\xampp\htdocs\Nhom5_CMS\wp-admin\post.php(227): edit_post()
+#13 {main}
+  thrown in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php on line 57
+
+2024-11-13T03:16:48+00:00 CRITICAL Uncaught Error: Class "WpOrg\Requests\Requests" not found in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php:57
+Stack trace:
+#0 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_CURL.php(32): SWP_Requests::fetch_shares_via_wordpress_multi(Array)
+#1 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(631): SWP_CURL::fetch_shares_via_curl_multi(Array)
+#2 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(513): SWP_Post_Cache->fetch_api_responses()
+#3 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(307): SWP_Post_Cache->rebuild_share_counts()
+#4 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(132): SWP_Post_Cache->rebuild_cached_data()
+#5 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache_Loader.php(101): SWP_Post_Cache->__construct(292)
+#6 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(310): SWP_Post_Cache_Loader->update_post(292)
+#7 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\Nhom5_CMS\wp-includes\post.php(4717): do_action('save_post', 292, Object(WP_Post), true)
+#10 C:\xampp\htdocs\Nhom5_CMS\wp-includes\post.php(4819): wp_insert_post(Array, false, true)
+#11 C:\xampp\htdocs\Nhom5_CMS\wp-admin\includes\post.php(426): wp_update_post(Array)
+#12 C:\xampp\htdocs\Nhom5_CMS\wp-admin\post.php(227): edit_post()
+#13 {main}
+  thrown in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php on line 57
+
+2024-11-13T03:16:54+00:00 CRITICAL Uncaught Error: Class "WpOrg\Requests\Requests" not found in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php:57
+Stack trace:
+#0 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_CURL.php(32): SWP_Requests::fetch_shares_via_wordpress_multi(Array)
+#1 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(631): SWP_CURL::fetch_shares_via_curl_multi(Array)
+#2 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(513): SWP_Post_Cache->fetch_api_responses()
+#3 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(307): SWP_Post_Cache->rebuild_share_counts()
+#4 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(132): SWP_Post_Cache->rebuild_cached_data()
+#5 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache_Loader.php(67): SWP_Post_Cache->__construct(290)
+#6 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(390): SWP_Post_Cache_Loader->get_post_cache(290)
+#7 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel.php(270): SWP_Buttons_Panel->establish_share_data()
+#8 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\buttons-panel\SWP_Buttons_Panel_Shortcode.php(58): SWP_Buttons_Panel->__construct(Array, true)
+#9 C:\xampp\htdocs\Nhom5_CMS\wp-includes\shortcodes.php(393): SWP_Buttons_Panel_Shortcode->buttons_shortcode(Array, '', 'social_warfare')
+#10 [internal function]: do_shortcode_tag(Array)
+#11 C:\xampp\htdocs\Nhom5_CMS\wp-includes\shortcodes.php(265): preg_replace_callback('/\\[(\\[?)(social...', 'do_shortcode_ta...', '\xC4\x90ang c\xE1\xBA\xADp nh\xE1...')
+#12 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\class-wc-structured-data.php(203): do_shortcode('\xC4\x90ang c\xE1\xBA\xADp nh\xE1...')
+#13 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(308): WC_Structured_Data->generate_product_data(Object(WC_Product_Simple))
+#14 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#15 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#16 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product\layouts\product-right-sidebar-full.php(57): do_action('woocommerce_sin...')
+#17 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#18 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#19 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\content-single-product.php(42): wc_get_template_part('single-product/...', 'right-sidebar-f...')
+#20 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template.php(785): require('C:\\xampp\\htdocs...')
+#21 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('C:\\xampp\\htdocs...', false)
+#22 C:\xampp\htdocs\Nhom5_CMS\wp-content\themes\flatsome\woocommerce\single-product.php(39): wc_get_template_part('content', 'single-product')
+#23 C:\xampp\htdocs\Nhom5_CMS\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#24 C:\xampp\htdocs\Nhom5_CMS\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#25 C:\xampp\htdocs\Nhom5_CMS\index.php(17): require('C:\\xampp\\htdocs...')
+#26 {main}
+  thrown in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php on line 57
+
+2024-11-13T03:17:12+00:00 CRITICAL Uncaught Error: Class "WpOrg\Requests\Requests" not found in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php:57
+Stack trace:
+#0 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_CURL.php(32): SWP_Requests::fetch_shares_via_wordpress_multi(Array)
+#1 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(631): SWP_CURL::fetch_shares_via_curl_multi(Array)
+#2 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(513): SWP_Post_Cache->fetch_api_responses()
+#3 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(307): SWP_Post_Cache->rebuild_share_counts()
+#4 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache.php(132): SWP_Post_Cache->rebuild_cached_data()
+#5 C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Post_Cache_Loader.php(101): SWP_Post_Cache->__construct(292)
+#6 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(310): SWP_Post_Cache_Loader->update_post(292)
+#7 C:\xampp\htdocs\Nhom5_CMS\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 C:\xampp\htdocs\Nhom5_CMS\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\Nhom5_CMS\wp-includes\post.php(4717): do_action('save_post', 292, Object(WP_Post), true)
+#10 C:\xampp\htdocs\Nhom5_CMS\wp-includes\post.php(4819): wp_insert_post(Array, false, true)
+#11 C:\xampp\htdocs\Nhom5_CMS\wp-admin\includes\post.php(426): wp_update_post(Array)
+#12 C:\xampp\htdocs\Nhom5_CMS\wp-admin\post.php(227): edit_post()
+#13 {main}
+  thrown in C:\xampp\htdocs\Nhom5_CMS\wp-content\plugins\social-warfare\lib\utilities\SWP_Requests.php on line 57
+

@@ -1,0 +1,18 @@
+fieldset.sw_km {
+    margin: 0 0 15px;
+    border: 1px dashed red;
+    padding: 15px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    font-size: 16px;
+}
+fieldset.sw_km legend {
+    padding: 3px 10px;
+    margin: 0;
+    border: 0;
+    background-color: #cc1818;
+    color: #fff;
+    border-radius: 10px;
+    width: auto;
+}
